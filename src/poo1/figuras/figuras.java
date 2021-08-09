@@ -16,4 +16,18 @@ public class figuras {
         area = (base * altura)/2 ;
         JOptionPane.showMessageDialog(null, "El area del triangulo es :" + area);
     }
+    public void rectangulo(){
+        int base , altura , area ;
+        base = Integer.parseInt(JOptionPane.showInputDialog("Digite la base del rectangulo"));
+        altura = Integer.parseInt(JOptionPane.showInputDialog("Digite la altura del rectangulo")); 
+        area = (base * altura);
+        JOptionPane.showMessageDialog (null, "El area del rectangulo es : "+ area);
+    }
+    public void circulo (){
+        double radio , area, pi ;
+        pi = 3.14 ;
+        radio = Double.parseDouble(JOptionPane.showInputDialog(null , "Digite el radio del circulo"));
+        area = (pi * (radio*2));
+        JOptionPane.showMessageDialog(null, "El area del circulo es :" + area);
+    }
 }
